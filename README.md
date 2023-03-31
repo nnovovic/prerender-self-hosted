@@ -19,7 +19,7 @@ By using Docker Compose, you can easily deploy and manage Prerender service on y
 1. Copy `nginx/examples/prerender.conf` to `deploy/nginx/sites-available` and edit it
 2. Run docker compose
 ```
-docker compose -d up
+docker compose up -d
 ```
 3. Navigate to the url defined in `server_name` in your nginx configuration file. For example:
 ```
