@@ -1,0 +1,12 @@
+{
+  "name": "prerender-docker",
+  "version": "1.0.0",
+  "description": "Lightweight prerender container built on Alpine Linux",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "prerender": "5.20.2"
+  }
+}

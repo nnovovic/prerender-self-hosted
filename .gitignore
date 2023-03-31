@@ -1,0 +1,4 @@
+.idea
+.DS_Store
+nginx/sites-enabled/*
+!nginx/sites-enabled/default.conf

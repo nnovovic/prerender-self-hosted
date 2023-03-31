@@ -1,0 +1,21 @@
+version: '3.9'
+
+services:
+  nginx:
+    image: nginx:latest
+    restart: unless-stopped
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./nginx/sites-enabled:/etc/nginx/sites-enabled
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    environment:
+      - "TZ=UTC"
+  prerender:
+    image: nnovovic/prerender
+    ports:
+      - 3000:3000
+    restart: unless-stopped
+    environment:
+      - "TZ=UTC"
