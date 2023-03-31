@@ -2,7 +2,7 @@
 
 This project is focused on providing an easy way to run a self-hosted [Prerender](https://github.com/prerender/prerender) service using Docker. 
 
-By using Docker Compose, you can easily deploy and manage their Prerender service on your own server, while [NGINX](https://www.docker.com/) provides a high-performance web server and reverse proxy.
+By using Docker Compose, you can easily deploy and manage Prerender service on your own server, while [NGINX](https://www.docker.com/) provides a high-performance web server and reverse proxy.
 
 
 ## Requirements
@@ -11,13 +11,13 @@ By using Docker Compose, you can easily deploy and manage their Prerender servic
 
 ## Project structure
 - nginx - Configuration for NGINX
-- prerender - prerender container built on Alpine Linux with Node and Headless Chromium
+- prerender - Prerender container built on Alpine Linux with Node and Headless Chromium
 - docker-compose.yml 
 
 ## Deployment
 
-1. Copy `nginx/examples/prerender.conf` to `deploy/nginx/sites-available` and edit it.
-2. Run docker compose.
+1. Copy `nginx/examples/prerender.conf` to `deploy/nginx/sites-available` and edit it
+2. Run docker compose
 ```
 docker compose -d up
 ```
