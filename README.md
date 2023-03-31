@@ -42,3 +42,4 @@ We will ignore these query arguments in our `proxy_cache_key`
 - fbclid
 - keyword
 - gclid
+- \_escaped_fragment\_
