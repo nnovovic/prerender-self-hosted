@@ -8,6 +8,9 @@ const server = prerender({
     forwardHeaders: true,
 });
 
+server.use(prerender.browserForceRestart());
+server.use(prerender.addMetaTags());
 server.use(prerender.removeScriptTags());
+server.use(prerender.httpHeaders());
 
 server.start();

@@ -28,7 +28,11 @@ curl http://localhost:3000/render?url=https://www.example.com/
 ## Prerender plugins
 
 A few default plugins have been activated by default (see `server.js`):
+- https://github.com/prerender/prerender/blob/master/lib/plugins/browserForceRestart.js
+- https://github.com/prerender/prerender/blob/master/lib/plugins/addMetaTags.js
 - https://github.com/prerender/prerender/blob/master/lib/plugins/removeScriptTags.js
+- https://github.com/prerender/prerender/blob/master/lib/plugins/httpHeaders.js
+
 ## Prerender documentation
 
 Check out the official Prerender documentation: https://github.com/prerender/prerender
